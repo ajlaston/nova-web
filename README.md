@@ -63,10 +63,10 @@ This project demonstrates modern development workflows using AI assistance:
 *Interactive performance comparisons across hardware profiles*
 
 ### Test Your Hardware:
-- 500K nodes (Butterfly smooth on all hardware)
-- 2M nodes (60 FPS on discrete GPUs)
-- 8M nodes (Peak efficiency demonstration)
-- 15M+ nodes (Memory bandwidth limit showcase)
+- 50K nodes (Butterfly smooth on all hardware)
+- 1M nodes (60 FPS on discrete GPUs)
+- 5M nodes (Peak efficiency demonstration)
+- 15M+ nodes (Memory bandwidth limit)
 
 ---
 .
