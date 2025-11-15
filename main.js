@@ -29,6 +29,12 @@ function initControls() {
         nodeDisplay.textContent = nodeCount.toLocaleString();
     });
 
+      nodeSlider.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        resetSimulation();
+    }
+});
+
     resetBtn.addEventListener('click', resetSimulation);
     preset500k.addEventListener('click', () => setNodeCount(500000));
     preset2M.addEventListener('click', () => setNodeCount(2000000));
