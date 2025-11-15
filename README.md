@@ -60,8 +60,7 @@ This project demonstrates modern development workflows using AI assistance:
 - Memory-aligned data structures
 
 ### Key Features
-- **120 million node capacity** (largest instanced draw in browser history)
-- **Real-time physics simulation** (not just rendering)
+- **120 million node capacity** (PC will crash or worse)
 - **Hardware-automatic scaling** (no code changes needed)
 - **Zero-allocation updates** (GC-free operation)
 
