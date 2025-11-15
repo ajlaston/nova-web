@@ -61,9 +61,6 @@ This project demonstrates modern development workflows using AI assistance:
 - **Hardware-automatic scaling** (no code changes needed)
 - **Zero-allocation updates** (GC-free operation)
 
-## Live Demos
-*Interactive performance comparisons across hardware profiles*
-
 ### Test Your Hardware:
 - 50K nodes (Butterfly smooth on all hardware)
 - 1M nodes (60 FPS on discrete GPUs)
