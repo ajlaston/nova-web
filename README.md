@@ -1,10 +1,10 @@
 # Nova WEB - WebGPU Test
-<img width="2440" height="1079" alt="image" src="https://github.com/user-attachments/assets/c2473ac1-66c0-40bc-9c72-13b18638cdb5" />
+<img width="2459" height="1090" alt="image" src="https://github.com/user-attachments/assets/f4401e4b-99f5-4c27-9639-1100af9483a6" />
 
 Benchmark WebGPU performance with 50K to 15 million nodes in real-time, with live FPS monitoring.(starting at 50k by default)
 
 ### instructions:
-Enter the number of nodes you want to display into the input box and press the reset button or press enter.
+Enter the number of nodes you want to display into the input box and click the update button or press enter.
 
 Link: https://ajlaston.github.io/Nova-Web/
 
