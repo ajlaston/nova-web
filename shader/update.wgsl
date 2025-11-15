@@ -1,4 +1,4 @@
-// Node def
+//Node def
 struct Node {
   x: f32,
   y: f32,
