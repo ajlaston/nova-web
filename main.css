@@ -1,0 +1,15 @@
+p {
+    color: rgb(85, 59, 234);
+}
+
+html, body {
+    margin: 0;
+    background: rgb(247, 248, 254);
+    overflow: hidden;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Webgpu Live Test</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .performance-warning {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+        
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            z-index: 10000;
+            border: 2px solid #ff8c00;
+            max-width: 400px;
+        }
+
+        .warning-icon {
+            font-size: 20px;
+            margin-right: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.6;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .warning-details {
+            font-size: 24px;
+            opacity: 0.9;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+
+        .close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 8px;
+            font-size: 19px;
+        }
+
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="performance-warning" id="perfWarning">
+        <div>
+            <span class="warning-icon">⚠️</span>
+            <strong>HIGH-PERFORMANCE DEMO</strong>
+        </div>
+        <div class="warning-details">
+            This simulation renders <strong>15 MILLION</strong> nodes in real-time MAXIMUM<br>
+            May cause performance issues on older hardware or Crash<br>
+            GPU-intensive - Close other applications for best experience
+        </div>
+        <button class="close-btn" onclick="document.getElementById('perfWarning').style.display='none'">
+            I Understand - Run Demo
+        </button>
+    </div>
+    <div id="controls"
+        style="position: absolute; top: 60px; left: 0; color: white; font-family: monospace; background: rgba(0,0,0,0.5); padding: 10px;">
+        <div>
+            <label>Node Count: </label>
+            <input type="text" id="nodeSlider" min="100000" max="15000000" step="100000" value="100000">
+            <!-- <span id="nodeDisplay">15,000,000</span> -->
+        </div>
+        <div>
+            <button id="resetBtn">Reset</button>
+            <button id="preset500k">500K</button>
+            <button id="preset2M">2M</button>
+            <button id="preset8M">8M</button>
+        </div>
+    </div>
+
+    <canvas id="gfx"></canvas>
+    <div id="stats"
+        style="position: absolute; top: 0; left: 0; color: white; font-family: monospace; background: rgba(0,0,0,0.5); padding: 5px;">
+        FPS: <span id="fps">0</span><br>
+        Nodes: <span id="nodes">0</span> <br>
+        RAM: <span id="mem">0</span></span>
+    </div>
+
+    <script>
+        // Auto-hide warning after 8 seconds
+        setTimeout(() => {
+            const warning = document.getElementById('perfWarning');
+            if (warning) {
+                warning.style.opacity = '0';
+                warning.style.transition = 'opacity 1s ease';
+                setTimeout(() => warning.style.display = 'none', 1000);
+            }
+        }, 8000);
+    </script>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
