@@ -1,5 +1,5 @@
 # Nova WEB - WebGPU Test
-This Live Demo lets you benchmark WebGPU in JS canvas up to 15 million nodes with FPS. (starting at 100k by default)
+This Live Demo lets you benchmark WebGPU in JS canvas up to 15 million nodes with FPS. (starting at 50k by default)
 Link: 
 
 ## Performance Benchmarks
