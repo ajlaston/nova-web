@@ -4,7 +4,7 @@
 Benchmark WebGPU performance with 50K to 15 million nodes in real-time, with live FPS monitoring.(starting at 50k by default)
 
 ### instructions:
-Press enter the number of nodes you want to display and press the reset button or press enter.
+Enter the number of nodes you want to display into the input box and press the reset button or press enter.
 
 Link: https://ajlaston.github.io/Nova-Web/
 
