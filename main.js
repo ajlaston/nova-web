@@ -4,7 +4,7 @@ canvas.height = window.innerHeight;
 
 // config
 const NODE_FLOATS = 11;
-let nodeCount = 100_000;
+let nodeCount = 50_000;
 let animationId = null;
 const chunkSize = 500_000;
 let numChunks = Math.ceil(nodeCount / chunkSize); // Make this let so it can be updated
